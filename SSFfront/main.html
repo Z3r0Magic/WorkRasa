@@ -1,0 +1,34 @@
+<?php
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel ="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    input {
+    position: absolute;
+    bottom: 400px;
+    width: 50.5%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <form action="end.php" method="get">
+    <button class="Button" name='Button' value=1 >1</button>
+    <button class="Button" name='Button' value=2>2</button>
+    <button class="Button" name='Button' value=3>3</button>
+    <button class="Button" name='Button'value=4>4</button>
+    <button class="Button" name='Button'value=5>5</button>
+    
+    <!--<button class="newButton" name='submit' value=' Записать '>Отправить</button>-->
+    </form>
+    <input type="text" id="name" name="name" placeholder='  Оставьте отзыв (не обязательно)' required minlength="4" maxlength="8" size="10" />
+</body> 
+</html>

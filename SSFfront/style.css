@@ -1,0 +1,102 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    flex-direction: row;
+    background: #222831;
+}
+button{
+    position: relative;
+    padding: 15px 50px;
+    margin: 10px;
+    background:#00ADB5;
+    color: #EEEEEE;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+button:nth-child(1):hover{
+    background: #B83B5E;
+}
+
+button:nth-child(2):hover{
+    background: #F08A5D;
+    
+}
+
+button:nth-child(3):hover{
+    background: #F9ED69;
+}
+
+button:nth-child(4):hover{
+    background: #62D2A2;
+}
+
+button:nth-child(5):hover{
+    background: #1FAB89;
+}
+
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+button:nth-child(1)::before{
+    background: linear-gradient(90deg,
+    transparent,#B83B5E,transparent);
+}
+
+button:nth-child(2)::before{
+    background: linear-gradient(90deg,
+    transparent,#F08A5D,transparent);
+}
+
+button:nth-child(3)::before{
+    background: linear-gradient(90deg,
+    transparent,#F9ED69,transparent);
+}
+
+button:nth-child(4)::before{
+    background: linear-gradient(90deg,
+    transparent,#62D2A2,transparent);
+}
+
+button:nth-child(5)::before{
+    background: linear-gradient(90deg,
+    transparent,#1FAB89,transparent);
+}
+
+button:hover::before{
+    left: 100%;
+}
+
+@keyframes anim {
+    0%{border: 1.1 solid #f30404;}
+    15%{border: 1.4 solid #f17204;}
+    20%{border: 1.1 solid #e2cc07;}
+    50%{border: 1.2 solid #72e302;}
+    100%{border: 1.3 solid #00f060; 
+        box-shadow: 2px 2px 8px #FFF9C0;} 
+}
+button {
+    animation: anim 5s ease-in-out infinite alternate;
+   }
+
+
+
+  
